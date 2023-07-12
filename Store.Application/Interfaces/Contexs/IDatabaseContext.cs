@@ -2,10 +2,12 @@
 using Microsoft.EntityFrameworkCore.Storage;
 using Store.Domain.Entities.Carts;
 using Store.Domain.Entities.Finances;
+using Store.Domain.Entities.HomePages;
 using Store.Domain.Entities.Medias;
 using Store.Domain.Entities.Orders;
 using Store.Domain.Entities.Post;
 using Store.Domain.Entities.Products;
+using Store.Domain.Entities.Results;
 using Store.Domain.Entities.Users;
 using System;
 using System.Collections.Generic;
@@ -36,6 +38,8 @@ namespace Store.Application.Interfaces.Contexs
         DbSet<Order> Orders { get; set; }
         DbSet<OrderDetail> OrderDetails { get; set; }
         DbSet<RequestPay> RequestPays { get; set; }
+        DbSet<Slider> Sliders { get; set; }
+        DbSet<Result> Results { get; set; }
         int SaveChanges(bool acceptAllChangesOnSuccess);
         int SaveChanges();
         void Dispose();

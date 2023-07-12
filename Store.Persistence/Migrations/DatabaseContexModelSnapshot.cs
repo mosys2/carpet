@@ -303,6 +303,49 @@ namespace Store.Persistence.Migrations
                     b.ToTable("RequestPays");
                 });
 
+            modelBuilder.Entity("Store.Domain.Entities.HomePages.Slider", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("InsertTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsRemoved")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Link")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("RemoveTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<byte[]>("RowVersion")
+                        .IsConcurrencyToken()
+                        .IsRequired()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("rowversion");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdateTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("UrlImage")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Sliders");
+                });
+
             modelBuilder.Entity("Store.Domain.Entities.Medias.Media", b =>
                 {
                     b.Property<string>("Id")
@@ -896,6 +939,49 @@ namespace Store.Persistence.Migrations
                     b.ToTable("Tags");
                 });
 
+            modelBuilder.Entity("Store.Domain.Entities.Results.Result", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("CssClass")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Image")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("InsertTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsRemoved")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("RemoveTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<byte[]>("RowVersion")
+                        .IsConcurrencyToken()
+                        .IsRequired()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("rowversion");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdateTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Value")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Results");
+                });
+
             modelBuilder.Entity("Store.Domain.Entities.Users.Contact", b =>
                 {
                     b.Property<string>("Id")
@@ -984,32 +1070,32 @@ namespace Store.Persistence.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "36e58623-05fe-4a47-ae79-ad939747ae79",
-                            InsertTime = new DateTime(2023, 7, 12, 10, 36, 52, 968, DateTimeKind.Local).AddTicks(8125),
+                            Id = "04ba7c97-f1a3-4cd5-a513-488ea2602ca3",
+                            InsertTime = new DateTime(2023, 7, 12, 17, 34, 16, 230, DateTimeKind.Local).AddTicks(4024),
                             IsRemoved = false,
                             Title = "تلفن همراه",
                             Value = "Mobail"
                         },
                         new
                         {
-                            Id = "c564076d-35b4-4d69-bbf3-537178d60fba",
-                            InsertTime = new DateTime(2023, 7, 12, 10, 36, 52, 968, DateTimeKind.Local).AddTicks(8201),
+                            Id = "7d344d08-926c-49f4-b0f5-bc617e9df525",
+                            InsertTime = new DateTime(2023, 7, 12, 17, 34, 16, 230, DateTimeKind.Local).AddTicks(4145),
                             IsRemoved = false,
                             Title = "تلفن",
                             Value = "Phone"
                         },
                         new
                         {
-                            Id = "92557661-8711-42ce-ab8b-b251b64843e5",
-                            InsertTime = new DateTime(2023, 7, 12, 10, 36, 52, 968, DateTimeKind.Local).AddTicks(8221),
+                            Id = "628d2c3d-ba45-4c21-a196-726d6b762501",
+                            InsertTime = new DateTime(2023, 7, 12, 17, 34, 16, 230, DateTimeKind.Local).AddTicks(4180),
                             IsRemoved = false,
                             Title = "ایمیل",
                             Value = "Email"
                         },
                         new
                         {
-                            Id = "2607a141-9ce5-421e-9cd1-b88ebaa5f48a",
-                            InsertTime = new DateTime(2023, 7, 12, 10, 36, 52, 968, DateTimeKind.Local).AddTicks(8238),
+                            Id = "332f993d-281b-4af7-ab4a-a00cec1e7960",
+                            InsertTime = new DateTime(2023, 7, 12, 17, 34, 16, 230, DateTimeKind.Local).AddTicks(4210),
                             IsRemoved = false,
                             Title = "آدرس",
                             Value = "Address"
@@ -1201,7 +1287,7 @@ namespace Store.Persistence.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "e5523332-f4f4-48d1-b7da-ffafc21330be",
+                            Id = "47f328de-76c7-4470-bd38-00ae79c0afb5",
                             Name = "Admin",
                             NormalizedName = "ADMIN",
                             IsRemoved = false,
@@ -1209,7 +1295,7 @@ namespace Store.Persistence.Migrations
                         },
                         new
                         {
-                            Id = "f5f4d688-b28c-4d77-a2b0-93355ed29882",
+                            Id = "0fd7c43b-42da-43fa-9cd4-b6b0191ce496",
                             Name = "Operator",
                             NormalizedName = "OPERATOR",
                             IsRemoved = false,
@@ -1217,7 +1303,7 @@ namespace Store.Persistence.Migrations
                         },
                         new
                         {
-                            Id = "0a2373a6-6f08-4bd5-9eb1-5f3ab8842d97",
+                            Id = "c1a188a2-59b9-44bf-8e32-c94633132232",
                             Name = "Customer",
                             NormalizedName = "CUSTOMER",
                             IsRemoved = false,

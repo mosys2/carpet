@@ -8,10 +8,12 @@ using Store.Common.Constant.Roles;
 using Store.Domain.Entities.Carts;
 using Store.Domain.Entities.Commons;
 using Store.Domain.Entities.Finances;
+using Store.Domain.Entities.HomePages;
 using Store.Domain.Entities.Medias;
 using Store.Domain.Entities.Orders;
 using Store.Domain.Entities.Post;
 using Store.Domain.Entities.Products;
+using Store.Domain.Entities.Results;
 using Store.Domain.Entities.Users;
 using System;
 using System.Collections.Generic;
@@ -47,6 +49,8 @@ namespace Store.Persistence.Contexs
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderDetail> OrderDetails { get; set; }
         public DbSet<RequestPay> RequestPays { get; set; }
+        public DbSet<Slider> Sliders { get; set ;}
+        public DbSet<Result> Results { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder builder)
@@ -207,7 +211,8 @@ namespace Store.Persistence.Contexs
             modelBuilder.Entity<CartItem>().HasQueryFilter(p => !p.IsRemoved);
             modelBuilder.Entity<UserAddress>().HasQueryFilter(p => !p.IsRemoved);
             modelBuilder.Entity<Brand>().HasQueryFilter(p => !p.IsRemoved);
-
+            modelBuilder.Entity<Slider>().HasQueryFilter(p => !p.IsRemoved);
+            modelBuilder.Entity<Result>().HasQueryFilter(p => !p.IsRemoved);
         }
 
         private void SeedData(ModelBuilder modelBuilder)
