@@ -41,6 +41,8 @@ using Store.Application.Services.UsersAddress.Queries.GetEditAddressUserForSite;
 using Store.Application.Services.UsersAddress.Commands.EditAddressServiceForSite;
 using Store.Application.Services.UsersAddress.Commands.RemoveAddressService_ForSite;
 using Store.Application.Services.HomePages.Commands.AddNewSlider;
+using Store.Application.Services.HomePages.Queries.GetSlider;
+using Store.Application.Services.HomePages.Commands.RemoveSlider;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
@@ -82,6 +84,8 @@ builder.Services.AddScoped<IGetEditAddressUserForSite, GetEditAddressUserForSite
 builder.Services.AddScoped<IEditAddressUserForSite, EditAddressUserForSite>();
 builder.Services.AddScoped<IRemoveAddressUserForSite, RemoveAddressUserForSite>();
 builder.Services.AddScoped<IAddNewSliderService, AddNewSliderService>();
+builder.Services.AddScoped<IGetSliderService, GetSliderService>();
+builder.Services.AddScoped<IRemoveSliderService, RemoveSliderService>();
 
 
 var app = builder.Build();

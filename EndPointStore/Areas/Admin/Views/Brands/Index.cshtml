@@ -167,7 +167,7 @@
                    Id,Name, Slug, Image
                     }
                     //ajax request
-                ajaxFunc("Brands/AddBrand", data, "POST",
+                ajaxFunc("/Brands/AddBrand", data, "POST",
                         function (result) {
                             if (result.isSuccess) {
                             $("#frm-brands").trigger("reset");
