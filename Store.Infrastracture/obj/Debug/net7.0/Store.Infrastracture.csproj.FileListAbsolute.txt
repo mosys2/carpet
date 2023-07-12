@@ -34,3 +34,15 @@ C:\Store\Store.Infrastracture\obj\Debug\net7.0\Store.Infrastracture.dll
 C:\Store\Store.Infrastracture\obj\Debug\net7.0\refint\Store.Infrastracture.dll
 C:\Store\Store.Infrastracture\obj\Debug\net7.0\Store.Infrastracture.pdb
 C:\Store\Store.Infrastracture\obj\Debug\net7.0\ref\Store.Infrastracture.dll
+E:\Carpet-Mir\Store.Infrastracture\bin\Debug\net7.0\Store.Infrastracture.deps.json
+E:\Carpet-Mir\Store.Infrastracture\bin\Debug\net7.0\Store.Infrastracture.dll
+E:\Carpet-Mir\Store.Infrastracture\bin\Debug\net7.0\Store.Infrastracture.pdb
+E:\Carpet-Mir\Store.Infrastracture\obj\Debug\net7.0\Store.Infrastracture.csproj.AssemblyReference.cache
+E:\Carpet-Mir\Store.Infrastracture\obj\Debug\net7.0\Store.Infrastracture.GeneratedMSBuildEditorConfig.editorconfig
+E:\Carpet-Mir\Store.Infrastracture\obj\Debug\net7.0\Store.Infrastracture.AssemblyInfoInputs.cache
+E:\Carpet-Mir\Store.Infrastracture\obj\Debug\net7.0\Store.Infrastracture.AssemblyInfo.cs
+E:\Carpet-Mir\Store.Infrastracture\obj\Debug\net7.0\Store.Infrastracture.csproj.CoreCompileInputs.cache
+E:\Carpet-Mir\Store.Infrastracture\obj\Debug\net7.0\Store.Infrastracture.dll
+E:\Carpet-Mir\Store.Infrastracture\obj\Debug\net7.0\refint\Store.Infrastracture.dll
+E:\Carpet-Mir\Store.Infrastracture\obj\Debug\net7.0\Store.Infrastracture.pdb
+E:\Carpet-Mir\Store.Infrastracture\obj\Debug\net7.0\ref\Store.Infrastracture.dll
