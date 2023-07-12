@@ -46,3 +46,15 @@ E:\Carpet-Mir\Store.Common\obj\Debug\net7.0\Store.Common.dll
 E:\Carpet-Mir\Store.Common\obj\Debug\net7.0\refint\Store.Common.dll
 E:\Carpet-Mir\Store.Common\obj\Debug\net7.0\Store.Common.pdb
 E:\Carpet-Mir\Store.Common\obj\Debug\net7.0\ref\Store.Common.dll
+C:\Carpet\Store.Common\bin\Debug\net7.0\Store.Common.deps.json
+C:\Carpet\Store.Common\bin\Debug\net7.0\Store.Common.dll
+C:\Carpet\Store.Common\bin\Debug\net7.0\Store.Common.pdb
+C:\Carpet\Store.Common\obj\Debug\net7.0\Store.Common.csproj.AssemblyReference.cache
+C:\Carpet\Store.Common\obj\Debug\net7.0\Store.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Carpet\Store.Common\obj\Debug\net7.0\Store.Common.AssemblyInfoInputs.cache
+C:\Carpet\Store.Common\obj\Debug\net7.0\Store.Common.AssemblyInfo.cs
+C:\Carpet\Store.Common\obj\Debug\net7.0\Store.Common.csproj.CoreCompileInputs.cache
+C:\Carpet\Store.Common\obj\Debug\net7.0\Store.Common.dll
+C:\Carpet\Store.Common\obj\Debug\net7.0\refint\Store.Common.dll
+C:\Carpet\Store.Common\obj\Debug\net7.0\Store.Common.pdb
+C:\Carpet\Store.Common\obj\Debug\net7.0\ref\Store.Common.dll
