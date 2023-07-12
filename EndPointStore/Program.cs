@@ -43,6 +43,9 @@ using Store.Application.Services.UsersAddress.Commands.RemoveAddressService_ForS
 using Store.Application.Services.HomePages.Commands.AddNewSlider;
 using Store.Application.Services.HomePages.Queries.GetSlider;
 using Store.Application.Services.HomePages.Commands.RemoveSlider;
+using Store.Application.Services.Results.Commands.AddNewResult;
+using Store.Application.Services.Results.Queries.GetResult;
+using Store.Application.Services.Results.Commands.RemoveResult;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
@@ -86,8 +89,9 @@ builder.Services.AddScoped<IRemoveAddressUserForSite, RemoveAddressUserForSite>(
 builder.Services.AddScoped<IAddNewSliderService, AddNewSliderService>();
 builder.Services.AddScoped<IGetSliderService, GetSliderService>();
 builder.Services.AddScoped<IRemoveSliderService, RemoveSliderService>();
-
-
+builder.Services.AddScoped<IAddNewResultService, AddNewResultService>();
+builder.Services.AddScoped<IGetResultService, GetResultService>();
+builder.Services.AddScoped<IRemoveResultService, RemoveResultService>();
 var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
